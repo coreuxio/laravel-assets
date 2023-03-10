@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "php": "^5.3.3|^7.0|^8.0",
+    "php": "^8.0",
     "php-ffmpeg/php-ffmpeg": "1.1.0",
     "php-ffmpeg/extras": "^0.3.1",
     "intervention/image": "2.7.2"
