@@ -1,0 +1,31 @@
+{
+  "name": "lperezdude/assets",
+  "homepage": "https://github.com/lperezdude/assets",
+  "description": "A package for handling asset uploads to s3.",
+  "keywords": [
+    "common",
+    "tools",
+    "services"
+  ],
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Core UX",
+      "homepage": "http://coreux.io"
+    }
+  ],
+  "require": {
+    "php": "^5.3.3|^7.0",
+    "php-ffmpeg/php-ffmpeg": "0.6.1",
+    "php-ffmpeg/extras": "^0.3.1",
+    "intervention/image": "2.3.8"
+  },
+  "require-dev": {},
+  "scripts": {},
+  "autoload": {
+    "psr-4": {
+      "Assets\\": "src/"
+    }
+  }
+}
