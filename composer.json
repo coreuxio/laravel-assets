@@ -1,6 +1,6 @@
 {
-  "name": "lperezdude/assets",
-  "homepage": "https://github.com/lperezdude/assets",
+  "name": "coreuxio/laravel-assets",
+  "homepage": "https://github.com/coreuxio/laravel-assets",
   "description": "A package for handling asset uploads to s3.",
   "keywords": [
     "common",
