@@ -18,7 +18,8 @@
   "require": {
     "php": "^8.0",
     "php-ffmpeg/php-ffmpeg": "^1.1",
-    "intervention/image": "^2.7"
+    "intervention/image": "^2.7",
+    "league/flysystem": "^3.12"
   },
   "scripts": {},
   "autoload": {
