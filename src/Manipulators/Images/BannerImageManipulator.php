@@ -88,7 +88,7 @@ class BannerImageManipulator implements Manipulator
         $validationRules = [
             "sizes" => "required|array",
             "sizes.*" => "required|array",
-            "sizes.*.y" => "required|numeric|nullable",
+            "sizes.*.y" => "numeric|nullable",
             "sizes.*.x" => "required|numeric|nullable",
         ];
         $validation = Validator::make($config, $validationRules);
