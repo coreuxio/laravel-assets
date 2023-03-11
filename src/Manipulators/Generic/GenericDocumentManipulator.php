@@ -99,7 +99,7 @@ class GenericDocumentManipulator implements Manipulator
         $validationRules = [
             "thumbnails" => "required|array",
             "thumbnails.*" => "required|array",
-            "thumbnails.*.id" => "required|numeric|nullable",
+            "thumbnails.*.id" => "numeric|nullable",
             "thumbnails.*.url" => "required|string",
         ];
         $messages = [
