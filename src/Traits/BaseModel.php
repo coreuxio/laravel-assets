@@ -225,6 +225,11 @@ trait BaseModel
         $query->SortQueryBy($field, $order);
     }
 
+    public function scopeAlsoSelect(Builder $query, string $select)
+    {
+        $this->appendToSelect($select);
+    }
+
     /**
      * @param $query
      * @param null $string

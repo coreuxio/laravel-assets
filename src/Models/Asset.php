@@ -2,6 +2,7 @@
 
 namespace Assets\Models;
 
+use Assets\Traits\BaseModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -15,7 +16,7 @@ use Illuminate\Database\Query\JoinClause;
  */
 class Asset extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes, BaseModel;
 
     /**
      * @var array

@@ -4,6 +4,7 @@ namespace Assets\Models;
 
 use Assets\Contracts\AssetDocumentInterface;
 use Assets\Models\Scopes\DocumentStructureScope;
+use Assets\Traits\BaseModel;
 use Assets\Traits\IsDocument;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -18,7 +19,7 @@ use Illuminate\Database\Query\JoinClause;
  */
 class Image extends Model implements AssetDocumentInterface
 {
-    use IsDocument, SoftDeletes;
+    use IsDocument, SoftDeletes, BaseModel;
 
     /**
      * @var string
