@@ -16,9 +16,9 @@ class CreateMicrosoftDocumentsTableAssets extends Migration
             $table->increments('id');
             $table->string('title')->nullable();
             $table->integer('thumbnail_id')->unsigned();
-            $table->foreign('thumbnail_id')->references('id')->on('files');
+//            $table->foreign('thumbnail_id')->references('id')->on('files');
             $table->integer('document_id')->unsigned();
-            $table->foreign('document_id')->references('id')->on('files');
+//            $table->foreign('document_id')->references('id')->on('files');
             $table->softDeletes();
             $table->timestamps();
         });
