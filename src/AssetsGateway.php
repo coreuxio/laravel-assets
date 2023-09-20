@@ -38,6 +38,15 @@ class AssetsGateway
     }
 
     /**
+     * @param int $id
+     * @param array $with
+     * @return Asset
+     */
+    public function find(int $id, array $with = []):Asset{
+        return Asset::with($with)->findOrFail($id);
+    }
+
+    /**
      * @param \Illuminate\Http\UploadedFile $file
      * @param array $options
      *
